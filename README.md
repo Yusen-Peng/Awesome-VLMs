@@ -29,5 +29,18 @@ a structured awesome list of VLMs with my notes.
     - ![alt text](figures/GLIP.png)
     - deep fusion: ![alt text](figures/deep_fusion.png)
 
-- [ ] VLMo
-  - motivation:
+- [x] [VLMo](https://arxiv.org/abs/2111.02358)
+  - motivation: take advantage of both a dual encoder (effective for retrieval tasks) and a fusion encoder (superior on VL tasks)
+  - contribution:
+    - three stages pretraining: ![alt text](figures/3_stages.png)
+    - joint pretraining on three tasks: 
+      - image-text contrast
+      - image-text matching
+      - masked LM pretraining
+    - ![alt text](figures/VLMo.png)
+
+- [ ] [ImageBind]()
+- [ ] VideoCLIP 
+- [ ] VideoMAE
+
+## Model zoo - Text generation with Multimodal Input
