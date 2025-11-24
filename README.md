@@ -12,3 +12,12 @@ a structured awesome list of VLMs with my notes.
 
 ## Model zoo - Vision-Language Understanding
 
+- [x] [CLIP](https://arxiv.org/abs/2103.00020)
+- [ ] [AlphaCLIP](https://arxiv.org/abs/2312.03818)
+  - motivation: focusing on the regions of interest matters for fine-grained understanding
+  - contribution: 
+    - datasets with more fine-grained region-text pairs
+    - image encoder with an additional alpha channel
+    - ![alt text](figures/AlphaCLIP.png)
+
+- [ ] GLIP
