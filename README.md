@@ -30,16 +30,6 @@ a structured awesome list of VLMs with my notes.
     - ![alt text](figures/GLIP.png)
     - deep fusion: ![alt text](figures/deep_fusion.png)
 
-- [x] [VLMo](https://arxiv.org/abs/2111.02358)
-  - motivation: take advantage of both a dual encoder (effective for retrieval tasks) and a fusion encoder (superior on VL tasks)
-  - contribution:
-    - three stages pretraining: ![alt text](figures/3_stages.png)
-    - joint pretraining on three tasks: 
-      - image-text contrast
-      - image-text matching
-      - masked LM pretraining
-    - ![alt text](figures/VLMo.png)
-
 - [x] [ImageBind](https://arxiv.org/abs/2305.05665)
   - motivation: 
     - embeddings are usually limited to the pairs of modalities used for training
@@ -58,6 +48,31 @@ a structured awesome list of VLMs with my notes.
 
 ## Model zoo - Text generation with Multimodal Input
 
-- [ ] [LLaVA](https://arxiv.org/abs/2304.08485)
-- [ ] Flamingo
-- [ ] BLIP
+- [x] [LLaVA](https://arxiv.org/abs/2304.08485)
+- [x] [Flamingo](https://arxiv.org/abs/2204.14198)
+  - contribution:
+    - cross-attention layers are interleaved between the pretrained LM layers
+  - ![alt text](figures/Flamingo.png)
+  - ![alt text](figures/Flamingo_crossattn.png)
+- [x] [VLMo](https://arxiv.org/abs/2111.02358)
+  - motivation: take advantage of both a dual encoder (effective for retrieval tasks) and a fusion encoder (superior on VL tasks)
+  - contribution:
+    - three stages pretraining: ![alt text](figures/3_stages.png)
+    - joint pretraining on three tasks: 
+      - image-text contrast
+      - image-text matching
+      - masked LM pretraining
+    - ![alt text](figures/VLMo.png)
+- [x] [BLIP](https://arxiv.org/abs/2201.12086)
+  - motivation: generation models (encoder-decoder) and retrieval models (encoder-only) ain't unified
+  - contribution: 
+    - propose multimodal mixture of encoder-decoder (MED) with three objectives trained jointly
+      - Image-Text Contrastive Loss (unimodal encoder track)
+      - Image-Text Matching Loss (image-grounded text encoder track)
+      - Language Modeling Loss (image-grounded text decoder track)
+  - ![alt text](figures/BLIP.png)
+- [ ] [BLIP-2](https://arxiv.org/abs/2301.12597)
+  - motivation: vision-language alignment is challenging if LLM is frozen
+  - contribution:
+    - 
+  - ![alt text](figures/Q_former.png)
