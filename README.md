@@ -64,7 +64,7 @@ a structured awesome list of VLMs with my notes.
       - masked LM pretraining
     - ![alt text](figures/VLMo.png)
 - [x] [BLIP](https://arxiv.org/abs/2201.12086)
-  - motivation: generation models (encoder-decoder) and retrieval models (encoder-only) ain't unified
+  - motivation: generation models (encoder-decoder) and retrieval models (encoder-only) **ain't unified**
   - contribution: 
     - propose multimodal mixture of encoder-decoder (MED) with three objectives trained jointly
       - Image-Text Contrastive Loss (unimodal encoder track)
@@ -74,5 +74,11 @@ a structured awesome list of VLMs with my notes.
 - [ ] [BLIP-2](https://arxiv.org/abs/2301.12597)
   - motivation: vision-language alignment is challenging if LLM is frozen
   - contribution:
-    - 
-  - ![alt text](figures/Q_former.png)
+    - first stage
+      - Q-Former consists of **two transformer submodules** that share the same self-attention layers
+      - have **queries** (i.e., a set of learnable embeddings) to extract visual representation most relevant to the text
+      - ![alt text](figures/Q_former_first_stage.png)
+    - second stage
+      - FC (i.e., projector) to project query embeddings *Z* into the same dimension as the text embedding of the LLM
+      - decoder-based LLMs (e.g. caption) encoder-decoder-based LLMs (soft visual prompts + prefix text)
+      - ![alt text](figures/Q_former_second_stage.png)
