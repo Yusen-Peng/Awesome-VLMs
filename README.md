@@ -71,7 +71,7 @@ a structured awesome list of VLMs with my notes.
       - Image-Text Matching Loss (image-grounded text encoder track)
       - Language Modeling Loss (image-grounded text decoder track)
   - ![alt text](figures/BLIP.png)
-- [ ] [BLIP-2](https://arxiv.org/abs/2301.12597)
+- [x] [BLIP-2](https://arxiv.org/abs/2301.12597)
   - motivation: vision-language alignment is challenging if LLM is frozen
   - contribution:
     - first stage
@@ -82,3 +82,9 @@ a structured awesome list of VLMs with my notes.
       - FC (i.e., projector) to project query embeddings *Z* into the same dimension as the text embedding of the LLM
       - decoder-based LLMs (e.g. caption) encoder-decoder-based LLMs (soft visual prompts + prefix text)
       - ![alt text](figures/Q_former_second_stage.png)
+
+- [x] [FLIP](https://arxiv.org/abs/2212.00794)
+  - motivation: efficiency speedup during contrastive pretraining
+  - contribution: simply mask many image tokens
+    - ![alt text](figures/FLIP.png)
+
