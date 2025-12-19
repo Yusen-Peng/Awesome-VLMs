@@ -46,6 +46,11 @@ a structured awesome list of VLMs with my notes.
       - underlying rationable: "mining clips from other videos can provide much more challenging negatives"
     - ![alt text](figures/VideoCLIP.png)
 
+- [x] [FLIP](https://arxiv.org/abs/2212.00794)
+  - motivation: efficiency speedup during contrastive pretraining
+  - contribution: simply mask many image tokens
+    - ![alt text](figures/FLIP.png)
+
 ## Model zoo - Text generation with Multimodal Input
 
 - [x] [LLaVA](https://arxiv.org/abs/2304.08485)
@@ -83,8 +88,5 @@ a structured awesome list of VLMs with my notes.
       - decoder-based LLMs (e.g. caption) encoder-decoder-based LLMs (soft visual prompts + prefix text)
       - ![alt text](figures/Q_former_second_stage.png)
 
-- [x] [FLIP](https://arxiv.org/abs/2212.00794)
-  - motivation: efficiency speedup during contrastive pretraining
-  - contribution: simply mask many image tokens
-    - ![alt text](figures/FLIP.png)
+
 
