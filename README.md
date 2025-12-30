@@ -4,10 +4,8 @@ a structured awesome list of VLMs with my notes.
 
 ## General surveys
 
-- [ ] ["Exploring the Frontier of Vision-Language Models: A Survey of Current Methodologies and Future Directions"](https://arxiv.org/abs/2404.07214) by Ghosh et al. 2024
-  - Vision-Language Understanding
-  - Text Generation with Multimodal Input
-  - Multimodal Output with Multimodal Input
+- [ ] ["Exploring the Frontier of Vision-Language Models: A Survey of Current Methodologies and Future Directions"](https://arxiv.org/abs/2404.07214) 
+- [ ] 
 - [ ]
 
 ## Model zoo - Vision-Language Understanding
@@ -95,6 +93,20 @@ a structured awesome list of VLMs with my notes.
     - ![alt text](figures/InstructBLIP.png)
 
 - [x] [KOSMOS-1](https://arxiv.org/abs/2302.14045)
+- [X] [KOSMOS-2](https://arxiv.org/abs/2306.14824)
+  - motivation: add grounding capability to multimodal large language models
+  - contribution: curate a dataset (GRIT) with referring expression - bounding box pairs
+  - ![alt text](figures/GRIT.png)
+  - add location tokens (to indicate bounding boxes) during training
+  - ![alt text](figures/KOSMOS-2.png)
+- [x] [PaLI](https://arxiv.org/abs/2209.06794)
+
+
+## Benchmarks
+
+- the first multimodal instruction tuning benchmark dataset that consists of 62 diverse multimodal tasks covering 10 broad categories: [MultiInstruct](https://arxiv.org/pdf/2212.10773)
+- 
+
 
 ## Future directions
 
