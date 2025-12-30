@@ -88,5 +88,15 @@ a structured awesome list of VLMs with my notes.
       - decoder-based LLMs (e.g. caption) encoder-decoder-based LLMs (soft visual prompts + prefix text)
       - ![alt text](figures/Q_former_second_stage.png)
 
+- [x] InstructBLIP
+  - motivation: existing methods take an **instruction-agnostic** approach when extracting visual features, meaning that a set of **static** visual representations are always being fed into the LLM, regardless of the task
+  - contribution:
+    - append **instruction tokens** during training (for both Q-Former )
+    - ![alt text](figures/InstructBLIP.png)
 
+## Future directions
 
+- fine-grained benchmark/evaluation
+- training efficiency
+- continual learning/unlearning
+- more...
