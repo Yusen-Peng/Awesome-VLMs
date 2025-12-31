@@ -16,3 +16,12 @@
       - FC (i.e., projector) to project query embeddings *Z* into the same dimension as the text embedding of the LLM
       - decoder-based LLMs (e.g. caption) encoder-decoder-based LLMs (soft visual prompts + prefix text)
       - ![alt text](figures/Q_former_second_stage.png)
+
+- [x] ACL findings 2023: [EfficientVLM](https://aclanthology.org/2023.findings-acl.873/)
+  - contribution: distilling then pruning
+    - distilling: 
+      - vision language pre-training loss (L-VLM): contrastive loss + matching loss + masked language modeling loss + bounding box prediction loss
+      - distillation loss: L-VLM + MSE of (attention distill + hidden states distill + logits distill)
+    - modal-adaptive pruning with a random binary variable **z**: 
+      - a differentiable approximation of **L0** regularization to measure the effective size of the pruned model
+    - ![alt text](figures/EfficientVLM.png)

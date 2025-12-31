@@ -31,12 +31,6 @@
     - ![alt text](figures/InstructBLIP.png)
 
 - [x] [KOSMOS-1](https://arxiv.org/abs/2302.14045)
-- [X] [KOSMOS-2](https://arxiv.org/abs/2306.14824)
-  - motivation: add grounding capability to multimodal large language models
-  - contribution: curate a dataset (GRIT) with referring expression - bounding box pairs
-  - ![alt text](figures/GRIT.png)
-  - add location tokens (to indicate bounding boxes) during training
-  - ![alt text](figures/KOSMOS-2.png)
 - [x] [PaLI](https://arxiv.org/abs/2209.06794)
 - [x] [Qwen-VL](https://arxiv.org/abs/2308.12966)
   - contribution:
