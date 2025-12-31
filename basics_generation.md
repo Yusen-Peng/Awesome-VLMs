@@ -1,0 +1,56 @@
+# Text generation with Multimodal Input
+
+- [x] [LLaVA](https://arxiv.org/abs/2304.08485)
+- [x] [Flamingo](https://arxiv.org/abs/2204.14198)
+  - contribution:
+    - cross-attention layers are interleaved between the pretrained LM layers
+  - ![alt text](figures/Flamingo.png)
+  - ![alt text](figures/Flamingo_crossattn.png)
+- [x] [VLMo](https://arxiv.org/abs/2111.02358)
+  - motivation: take advantage of both a dual encoder (effective for retrieval tasks) and a fusion encoder (superior on VL tasks)
+  - contribution:
+    - three stages pretraining: ![alt text](figures/3_stages.png)
+    - joint pretraining on three tasks: 
+      - image-text contrast
+      - image-text matching
+      - masked LM pretraining
+    - ![alt text](figures/VLMo.png)
+- [x] [BLIP](https://arxiv.org/abs/2201.12086)
+  - motivation: generation models (encoder-decoder) and retrieval models (encoder-only) **ain't unified**
+  - contribution: 
+    - propose multimodal mixture of encoder-decoder (MED) with three objectives trained jointly
+      - Image-Text Contrastive Loss (unimodal encoder track)
+      - Image-Text Matching Loss (image-grounded text encoder track)
+      - Language Modeling Loss (image-grounded text decoder track)
+  - ![alt text](figures/BLIP.png)
+- [x] [BLIP-2](https://arxiv.org/abs/2301.12597)
+  - motivation: vision-language alignment is challenging if LLM is frozen
+  - contribution:
+    - first stage
+      - Q-Former consists of **two transformer submodules** that share the same self-attention layers
+      - have **queries** (i.e., a set of learnable embeddings) to extract visual representation most relevant to the text
+      - ![alt text](figures/Q_former_first_stage.png)
+    - second stage
+      - FC (i.e., projector) to project query embeddings *Z* into the same dimension as the text embedding of the LLM
+      - decoder-based LLMs (e.g. caption) encoder-decoder-based LLMs (soft visual prompts + prefix text)
+      - ![alt text](figures/Q_former_second_stage.png)
+
+- [x] [InstructBLIP](https://arxiv.org/abs/2305.06500)
+  - motivation: existing methods take an **instruction-agnostic** approach when extracting visual features, meaning that a set of **static** visual representations are always being fed into the LLM, regardless of the task
+  - contribution:
+    - append **instruction tokens** during training (for both Q-Former and LLM)
+    - ![alt text](figures/InstructBLIP.png)
+
+- [x] [KOSMOS-1](https://arxiv.org/abs/2302.14045)
+- [X] [KOSMOS-2](https://arxiv.org/abs/2306.14824)
+  - motivation: add grounding capability to multimodal large language models
+  - contribution: curate a dataset (GRIT) with referring expression - bounding box pairs
+  - ![alt text](figures/GRIT.png)
+  - add location tokens (to indicate bounding boxes) during training
+  - ![alt text](figures/KOSMOS-2.png)
+- [x] [PaLI](https://arxiv.org/abs/2209.06794)
+- [x] [Qwen-VL](https://arxiv.org/abs/2308.12966)
+  - contribution:
+    - in the first stage, only pretrain ViT and a **cross-attention adapter** (i.e., attention pooling with learnable query embeddings)
+    - in the second stage, pretrain everything with **high resolution**; last stage freezes ViT for supervised instruction tuning
+    - ![alt text](figures/Qwen.png)
