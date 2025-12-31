@@ -1,5 +1,10 @@
 # Efficiency
 
+- [x] CVPR 2024: [Cluster Masking](https://arxiv.org/abs/2405.08815)
+  - contribution: mask **random clusters** of visually similar image patches when training contrastive vision-language models
+    - Choosing clusters: instead of using K-means, they simply randomly select **anchor patches** from the image, calculate the pairwise distances among all patches, in which clusters formed within a distance threshold are masked out.
+    - ![alt text](figures/cluster_masking.png)
+
 - [x] CVPR 2023: [FLIP](https://arxiv.org/abs/2212.00794)
   - motivation: efficiency speedup during contrastive pretraining
   - contribution: simply mask many image tokens
