@@ -4,9 +4,10 @@ a structured awesome list of VLMs with my notes.
 
 ## General surveys
 
-- [ ] ["Exploring the Frontier of Vision-Language Models: A Survey of Current Methodologies and Future Directions"](https://arxiv.org/abs/2404.07214) 
-- [ ] 
-- [ ]
+- [ ] ["Exploring the Frontier of Vision-Language Models: A Survey of Current Methodologies and Future Directions"](https://arxiv.org/abs/2404.07214)
+
+
+
 
 ## Model zoo - Vision-Language Understanding
 
@@ -100,6 +101,11 @@ a structured awesome list of VLMs with my notes.
   - add location tokens (to indicate bounding boxes) during training
   - ![alt text](figures/KOSMOS-2.png)
 - [x] [PaLI](https://arxiv.org/abs/2209.06794)
+- [x] [Qwen-VL](https://arxiv.org/abs/2308.12966)
+  - contribution:
+    - in the first stage, only pretrain ViT and a **cross-attention adapter** (i.e., attention pooling with learnable query embeddings)
+    - in the second stage, pretrain everything with **high resolution**; last stage freezes ViT for supervised instruction tuning
+    - ![alt text](figures/Qwen.png)
 
 
 ## Benchmarks
