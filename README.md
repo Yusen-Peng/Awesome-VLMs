@@ -15,7 +15,7 @@
 ## Catch up with top-tier venues by themes!
 
 - [WIP] Theme - efficiency: [efficiency.md](/efficiency.md)
-- [ ] Theme - hallucination: [hallucination.md](/hallucination.md)
+- [WIP] Theme - hallucination: [hallucination.md](/hallucination.md)
 - [WIP] Theme - grounding: [grounding.md](/grounding.md)
 - [ ] Theme - reasoning: [reasoning.md](/reasoning.md)
 - [ ] Theme - interpretability: [interpretability.md](/interpretability.md)
