@@ -4,8 +4,8 @@
 - [x] [Flamingo](https://arxiv.org/abs/2204.14198)
   - contribution:
     - cross-attention layers are interleaved between the pretrained LM layers
-  - ![alt text](figures/Flamingo.png)
-  - ![alt text](figures/Flamingo_crossattn.png)
+  - ![alt text](/figures/Flamingo.png)
+  - ![alt text](/figures/Flamingo_crossattn.png)
 - [x] [VLMo](https://arxiv.org/abs/2111.02358)
   - motivation: take advantage of both a dual encoder (effective for retrieval tasks) and a fusion encoder (superior on VL tasks)
   - contribution:
@@ -14,7 +14,7 @@
       - image-text contrast
       - image-text matching
       - masked LM pretraining
-    - ![alt text](figures/VLMo.png)
+    - ![alt text](/figures/VLMo.png)
 - [x] [BLIP](https://arxiv.org/abs/2201.12086)
   - motivation: generation models (encoder-decoder) and retrieval models (encoder-only) **ain't unified**
   - contribution: 
@@ -22,13 +22,13 @@
       - Image-Text Contrastive Loss (unimodal encoder track)
       - Image-Text Matching Loss (image-grounded text encoder track)
       - Language Modeling Loss (image-grounded text decoder track)
-  - ![alt text](figures/BLIP.png)
+  - ![alt text](/figures/BLIP.png)
 
 - [x] [InstructBLIP](https://arxiv.org/abs/2305.06500)
   - motivation: existing methods take an **instruction-agnostic** approach when extracting visual features, meaning that a set of **static** visual representations are always being fed into the LLM, regardless of the task
   - contribution:
     - append **instruction tokens** during training (for both Q-Former and LLM)
-    - ![alt text](figures/InstructBLIP.png)
+    - ![alt text](/figures/InstructBLIP.png)
 
 - [x] [KOSMOS-1](https://arxiv.org/abs/2302.14045)
 - [x] [PaLI](https://arxiv.org/abs/2209.06794)
@@ -36,4 +36,4 @@
   - contribution:
     - in the first stage, only pretrain ViT and a **cross-attention adapter** (i.e., attention pooling with learnable query embeddings)
     - in the second stage, pretrain everything with **high resolution**; last stage freezes ViT for supervised instruction tuning
-    - ![alt text](figures/Qwen.png)
+    - ![alt text](/figures/Qwen.png)
