@@ -1,5 +1,8 @@
 # Hallucination
 
+- [ ] NAACL 2025: [Image Token Attention-Guided Decoding](https://aclanthology.org/2025.naacl-long.75/)
+
+
 - [x] ICML 2025: [MARINE](https://arxiv.org/abs/2402.08680)
   - motivation:  training/fine-tuning too costly, how about **training-free**?
   - contribution: 
@@ -24,3 +27,6 @@
     - curate a synthetic dataset of both **response-contrast** and **image-contrast** preference pairs
     - preference learning objective = reward - KL divergence from reference model + KL divergence from **answering WITHOUT images**
     - ![alt text](/figures/V-DPO.png)
+  
+- [ ] CVPR 2024: [Hallucination Augmented Contrastive Learning](https://arxiv.org/abs/2312.06968)
+

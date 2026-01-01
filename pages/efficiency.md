@@ -30,3 +30,10 @@
     - modal-adaptive pruning with a random binary variable **z**: 
       - a differentiable approximation of **L0** regularization to measure the effective size of the pruned model
     - ![alt text](/figures/EfficientVLM.png)
+
+- [x] ECCV 2022: [Tip-Adapter](https://arxiv.org/abs/2111.03930)
+  - motivation: inherits CLIP’s training-free advantage
+  - contribution:
+    - construct a KV cache to serve as "few-shot knowledge"
+    - combine CLIP original zero-shot **text classifier** with **domain-specific** cache logits
+    - ![alt text](/figures/tip_adapter.png)
