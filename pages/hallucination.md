@@ -28,5 +28,8 @@
     - preference learning objective = reward - KL divergence from reference model + KL divergence from **answering WITHOUT images**
     - ![alt text](/figures/V-DPO.png)
   
-- [ ] CVPR 2024: [Hallucination Augmented Contrastive Learning](https://arxiv.org/abs/2312.06968)
-
+- [x] CVPR 2024: [Hallucination Augmented Contrastive Learning](https://arxiv.org/abs/2312.06968)
+  - motivation: representations of texts that contain and do not contain hallucinations are **entangled**
+  - contribution: Hallucination Augmented Contrastive Learning (HACL)
+    - add hallucinated captions as hard-negative examples in contrastive learning
+    - ![alt text](/figures/HACL.png)
