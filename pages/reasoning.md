@@ -1,9 +1,26 @@
 # Reasoning
 
-[Knowing the Answer Isn't Enough: Fixing Reasoning Path Failures in LVLMs](https://arxiv.org/abs/2512.06258)
+- [x] preprint 2025 [Path-Select Optimization](https://arxiv.org/abs/2512.06258)
+  - motivation:
+    - study reasoning path failures even though the answer is correct
+  - basics: DPO versus GRPO
+    - DPO: “Given two answers, push the **winner** above the loser.”
+    - GRPO: “Given a group of answers, push the **above-average** ones up.”
+  - contribution:
+    - first stage: GRPO with format reward and answer reward
+    - second stage: 
+      - reasoning-aware reward: rule-based outcome reward + thinking reward
+      - Negative Replay Memory (NRM): helping the model “remember its errors”
+      - preference collection: online DPO
+  - ![alt text](/figures/PSO.png)
 
+- [X] Neurips-W 2025 [Think with Visual Abstract](https://arxiv.org/abs/2505.20164)
+  - motivation:
+    - images but often include redundant information -> potentially downgrades multimodal reasoning performance
+  - contribution:
+    - converts input images into into visual abstracts (e.g., contour, sketch, binarization)
+    - ![alt text](/figures/VAT.png)
 
-- [ ] Neurips-W 2025 [Visual Abstract Thinking](https://arxiv.org/abs/2505.20164)
 - [x] ICLR 2024: [Rephrase, Augment, Reason](https://arxiv.org/abs/2310.05861)
   - simple gradient-free framework: extract visual details, **augment questions**, and scoring the best answer
     - detail 1: salient question entities
