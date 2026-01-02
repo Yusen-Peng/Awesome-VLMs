@@ -17,5 +17,10 @@
 - [x] Theme - efficiency: [efficiency.md](/pages/efficiency.md)
 - [x] Theme - hallucination: [hallucination.md](/pages/hallucination.md)
 - [x] Theme - grounding: [grounding.md](/pages/grounding.md)
-- [ ] Theme - reasoning: [reasoning.md](/pages/reasoning.md)
-- [ ] Theme - 
+- [x] Theme - reasoning: [reasoning.md](/pages/reasoning.md)
+- [ ] Theme - embodied AI: coming soon!
+
+
+## Contacts
+
+Please do not hesitate to contact me (peng.1007@osu.edu) if you have any suggestions for this repo or collaboration opportunities!
