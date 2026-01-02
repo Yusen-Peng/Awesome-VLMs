@@ -18,4 +18,4 @@
 - [x] Theme - hallucination: [hallucination.md](/pages/hallucination.md)
 - [x] Theme - grounding: [grounding.md](/pages/grounding.md)
 - [ ] Theme - reasoning: [reasoning.md](/pages/reasoning.md)
-- [ ] Theme - interpretability: [interpretability.md](/pages/interpretability.md)
+- [ ] Theme - 

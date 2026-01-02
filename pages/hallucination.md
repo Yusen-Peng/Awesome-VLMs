@@ -1,6 +1,19 @@
 # Hallucination
 
-- [ ] NAACL 2025: [Image Token Attention-Guided Decoding](https://aclanthology.org/2025.naacl-long.75/)
+- [x] NAACL 2025: [Image Token Attention-Guided Decoding](https://aclanthology.org/2025.naacl-long.75/)
+  - motivation: 
+    - Hallucinations often happen when attention to image tokens drops
+    - RQ: Which intermediate layer best represents the “**pre-visual-understanding**” state?
+  - contribution:
+    - basics - **inter-layer contrastive decoding**:
+      - contrast (subtract) logits after N (full) layers and M (intermediate) layers
+      - indicator function: discard the token if its probability/confidence is less than an *alpha* fraction of the maximum probability
+    - ![alt text](/figures/inter_layer_cd.png)
+    - Image Token Attention-Guided Decoding:
+      - image token attention vector (iTaV): for each image token, find the maximum attention weight/score **v** among all heads
+      - ![alt text](/figures/iVaT.png)
+      - finally, select the target intermediate layer that maximizes the distance between image token attention vectors to perform inter-layer contrastive decoding
+    - ![alt text](/figures/iTaD.png)
 
 
 - [x] ICML 2025: [MARINE](https://arxiv.org/abs/2402.08680)
